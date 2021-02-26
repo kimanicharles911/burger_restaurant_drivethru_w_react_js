@@ -1,7 +1,7 @@
-const Person = () => {
+const Person = ({name, age}) => {
   return(
     <>
-      <p>I'm a person and I am {Math.floor(Math.random() * 30)} years old.</p>
+      <p>I'm {name} and I am {age} years old.</p>
     </>
   );
 }
