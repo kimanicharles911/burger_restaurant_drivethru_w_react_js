@@ -9,11 +9,19 @@ const App = () => {
       { name : "Samson", age: 30 },
       { name : "Mugo", age : 23},
       {name : "Marren", age : 25}
-    ]
+    ],
+    otherState: "some other value"
   });
 
   const switchNameHandler = () => {
-    console.log("Collide Air Strike");
+    /* console.log("Collide Air Strike"); */
+    updatePerson({
+      persons: [
+        { name : "Samzi", age: 40 },
+        { name : "Mugoz", age : 43},
+        {name : "Marren Nyagera", age : 45}
+      ]
+    })
   }
   
   return (
